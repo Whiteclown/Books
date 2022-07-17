@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.viewModelScope
+import com.bobrovskii.core.CarouselRV
 import com.bobrovskii.home.R
 import com.bobrovskii.home.databinding.FragmentHomeBinding
 import com.bobrovskii.home.presentation.HomeState
@@ -39,7 +40,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 	}
 
 	private fun initRV() {
-		binding.rvCarousel.adapter = carouselAdapter
+		binding.rvCarousel.initialize(carouselAdapter)
 		binding.rvBestSellers.adapter = bestSellerAdapter
 	}
 

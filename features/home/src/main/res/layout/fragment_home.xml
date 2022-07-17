@@ -27,18 +27,18 @@
 		app:layout_constraintTop_toTopOf="parent"
 		app:srcCompat="@drawable/ic_logo" />
 
-	<androidx.recyclerview.widget.RecyclerView
+	<com.bobrovskii.core.CarouselRV
 		android:id="@+id/rv_carousel"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_height="250dp"
+		android:layout_gravity="center_vertical"
 		android:layout_marginTop="24dp"
-		android:orientation="horizontal"
-		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+		android:clipToPadding="false"
+		android:overScrollMode="never"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.466"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/iv_logo"
-		android:padding="8dp"
 		tools:listitem="@layout/item_carousel_book" />
 
 	<TextView
@@ -48,9 +48,9 @@
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
 		android:layout_marginTop="20dp"
+		android:text="@string/best_seller"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/rv_carousel"
-		android:text="@string/best_seller" />
+		app:layout_constraintTop_toBottomOf="@+id/rv_carousel" />
 
 	<androidx.recyclerview.widget.RecyclerView
 		android:id="@+id/rv_best_sellers"
@@ -59,8 +59,8 @@
 		android:layout_marginTop="12dp"
 		android:orientation="vertical"
 		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-		app:layout_constraintTop_toBottomOf="@+id/tv_best_seller"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_best_seller"
 		tools:layout_editor_absoluteX="0dp"
 		tools:listitem="@layout/item_best_seller_book" />
 
