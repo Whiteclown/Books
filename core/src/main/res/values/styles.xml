@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="BestSeller" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">18sp</item>
+		<item name="font">@font/montserrat_semibold</item>
+	</style>
+
+	<style name="Author" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#80FFFFFF</item>
+		<item name="android:textSize">14sp</item>
+		<item name="font">@font/montserrat_medium</item>
+	</style>
+
+	<style name="Price" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">20sp</item>
+		<item name="font">@font/montserrat_bold</item>
+	</style>
+
+	<style name="Score" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">16sp</item>
+		<item name="font">@font/montserrat_medium</item>
+	</style>
+
+	<style name="AmountOfScorers" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#80FFFFFF</item>
+		<item name="android:textSize">14sp</item>
+		<item name="font">@font/montserrat_regular</item>
+	</style>
+
+	<style name="BookTitle" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">20sp</item>
+		<item name="font">@font/gtsectrafine_regular</item>
+	</style>
+
+	<style name="DetailAuthor" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">20sp</item>
+		<item name="font">@font/montserrat_medium</item>
+	</style>
+
+	<style name="DetailTitle" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">30sp</item>
+		<item name="font">@font/gtsectrafine_regular</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="AlsoLike" parent="TextAppearance.AppCompat">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textSize">14sp</item>
+		<item name="font">@font/montserrat_semibold</item>
+	</style>
+
+	<style name="primaryBtn" parent="ShapeAppearanceOverlay.Material3.Button">
+		<item name="android:textColor">#000000</item>
+		<item name="android:backgroundTint">#ffffff</item>
+		<item name="color">#ffffff</item>
+		<item name="android:textSize">16sp</item>
+		<item name="font">@font/montserrat_bold</item>
+	</style>
+
+	<style name="secondaryBtn" parent="ShapeAppearanceOverlay.Material3.Button">
+		<item name="android:textColor">#fbe3de</item>
+		<item name="android:backgroundTint">#ef8262</item>
+		<item name="color">#ef8262</item>
+		<item name="android:textSize">16sp</item>
+		<item name="font">@font/gilroy_bold</item>
+	</style>
+</resources>

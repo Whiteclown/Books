@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="best_seller">Best Seller</string>
+	<string name="amount_of_reviewers">(%1$d)</string>
+	<string name="price">%1$s $</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="you_can_also_like">You can also like</string>
+	<string name="free_preview">FREE PREVIEW</string>
+	<string name="amount_of_reviewers">(%1$d)</string>
+	<string name="btn_buy_text">%1$s $</string>
+</resources>

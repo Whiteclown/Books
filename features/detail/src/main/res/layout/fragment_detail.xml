@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#100a20">
+
+	<ImageButton
+		android:id="@+id/ibtn_close"
+		style="@style/Widget.Material3.Button.OutlinedButton"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_close" />
+
+	<ImageButton
+		android:id="@+id/ibtn_cart"
+		style="@style/Widget.Material3.Button.OutlinedButton"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginTop="16dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_cart" />
+
+	<ImageView
+		android:id="@+id/iv_book_detail_cover"
+		android:layout_width="150dp"
+		android:layout_height="200dp"
+		android:layout_marginTop="116dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:srcCompat="@tools:sample/avatars" />
+
+	<TextView
+		android:id="@+id/tv_book_title"
+		style="@style/DetailTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="31dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/iv_book_detail_cover"
+		tools:text="Title" />
+
+	<TextView
+		android:id="@+id/tv_author"
+		style="@style/DetailAuthor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.498"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_book_title"
+		tools:text="Author" />
+
+	<TextView
+		android:id="@+id/tv_score"
+		style="@style/Score"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="176dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_author"
+		tools:text="4" />
+
+	<TextView
+		android:id="@+id/tv_reviewers"
+		style="@style/AmountOfScorers"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="9dp"
+		app:layout_constraintStart_toEndOf="@+id/tv_score"
+		app:layout_constraintTop_toBottomOf="@+id/tv_author"
+		tools:text="(2323)" />
+
+	<Button
+		android:id="@+id/btn_buy"
+		style="@style/primaryBtn"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginTop="4dp"
+		android:background="@drawable/btn_rounded_right"
+		app:backgroundTint="#ffffff"
+		app:layout_constraintEnd_toStartOf="@+id/btn_preview"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_score"
+		tools:text="9.99" />
+
+	<Button
+		android:id="@+id/btn_preview"
+		style="@style/secondaryBtn"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="24dp"
+		android:layout_marginTop="4dp"
+		android:background="@drawable/btn_rounded_left"
+		android:text="@string/free_preview"
+		app:backgroundTint="#ef8262"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/btn_buy"
+		app:layout_constraintTop_toBottomOf="@+id/tv_score" />
+
+	<TextView
+		android:id="@+id/tv_also"
+		style="@style/AlsoLike"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="24dp"
+		android:text="@string/you_can_also_like"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btn_buy" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rv_similar_books"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:layout_marginTop="8dp"
+		android:orientation="horizontal"
+		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/tv_also" />
+
+	<include
+		android:id="@+id/loading_view"
+		layout="@layout/loading_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
