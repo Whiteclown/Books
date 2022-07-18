@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/btn_rounded_left.xml" value="0.202" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/btn_rounded_right.xml" value="0.202" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/ic_cart.xml" value="0.27" />
+        <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/ic_play.xml" value="0.263" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/ic_search.xml" value="0.27" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/image_rounded.xml" value="0.27" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/core/src/main/res/drawable/loading_view.xml" value="0.202" />
@@ -15,7 +16,7 @@
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/features/detail/src/main/res/layout/item_similar_book.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/features/home/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/features/home/src/main/res/layout/item_best_seller_book.xml" value="0.33" />
-        <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/features/home/src/main/res/layout/item_carousel_book.xml" value="0.33" />
+        <entry key="..\:/Users/Ivan/AndroidStudioProjects/Books/features/home/src/main/res/layout/item_carousel_book.xml" value="1.0" />
       </map>
     </option>
   </component>
